@@ -1,0 +1,5 @@
+FS  2.0    8.0   4   2
+FS  4.0   12.0   4   2
+WF template/H01_KEV_BHE.sac      target/H02_KEV_BHE.sac 
+WF template/H01_KEV_BHN.sac      target/H02_KEV_BHN.sac 
+WF template/H01_KEV_BHZ.sac      target/H02_KEV_BHZ.sac 

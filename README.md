@@ -1,6 +1,12 @@
 # ccdetect
 A very simple multichannel time-domain correlation detector  
 
+ccdetect v1.0.0 (March 2, 2026) is permanently archived on Zenodo with DOI: 10.5281/zenodo.18835809  
+ 
+[![DOI](https://zenodo.org/badge/1165112440.svg)](https://zenodo.org/doi/10.5281/zenodo.18835809) 
+
+https://doi.org/10.5281/zenodo.18835809  
+
 [![SQAaaS badge shields.io](https://img.shields.io/badge/sqaaas%20software-bronze-e6ae77)](https://api.eu.badgr.io/public/assertions/qd8AzoBVQjKMPJarBej1MA "SQAaaS bronze badge achieved")
 
 [![SQAaaS badge](https://github.com/EOSC-synergy/SQAaaS/raw/master/badges/badges_150x116/badge_software_bronze.png)](https://api.eu.badgr.io/public/assertions/qd8AzoBVQjKMPJarBej1MA "SQAaaS bronze badge achieved")

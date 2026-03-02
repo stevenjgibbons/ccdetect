@@ -1,6 +1,10 @@
 # ccdetect
 A very simple multichannel time-domain correlation detector  
 
+[![SQAaaS badge shields.io](https://img.shields.io/badge/sqaaas%20software-bronze-e6ae77)](https://api.eu.badgr.io/public/assertions/qd8AzoBVQjKMPJarBej1MA "SQAaaS bronze badge achieved")
+
+[![SQAaaS badge](https://github.com/EOSC-synergy/SQAaaS/raw/master/badges/badges_150x116/badge_software_bronze.png)](https://api.eu.badgr.io/public/assertions/qd8AzoBVQjKMPJarBej1MA "SQAaaS bronze badge achieved")
+
 You need all input files to be in SAC format with a single channel per file.  
 All channels should have the same sampling rate.  
 All template files must have the same number of samples (*NTEMP*) and all target files must have the same number of samples (*NTARG*).  
@@ -43,3 +47,22 @@ icc = 2    -->   CC * | CC |
 icc = 3    -->   PCC
 icc = 4    -->   PCC * | PCC |
 ```
+
+
+
+This program requires SAC and uses the XAPIIR library (Harris, 1990).  
+This whole library is provided in the single source file XAPIIR.f.    
+(The XAPIIR routines are entirely third party software.)  
+
+The basic algorithm is that described by Gibbons and Ringdal (2006).  
+I recommend using icc = 2 or icc = 4 for the CC * | CC | versions, for the reasons given by Gibbons (2022).  
+
+
+References:  
+
+Gibbons, S. J. and Ringdal, F. (2006). The detection of low magnitude seismic events using array-based waveform correlation. *Geophysical Journal International*, **165**, 149– 166. https://doi.org/10.1111/j.1365-246X.2006.02865.x  
+Gibbons S. J. (2022). The Optimal Correlation Detector? *Geophysical Journal International*, **228**, Issue 1, 355–365 doi: 10.1093/gji/ggab344  
+Harris, David. XAPiir: A recursive digital filtering package, report, September 21, 1990; California.  
+(https://digital.library.unt.edu/ark:/67531/metadc1203741/m1/1/: accessed November 5, 2023),  
+University of North Texas Libraries, UNT Digital Library,  
+https://digital.library.unt.edu; crediting UNT Libraries Government Documents Department.  
